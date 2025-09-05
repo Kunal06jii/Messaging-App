@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VaChatt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>VaChatt</h1>
+    <p>Your Code: <span id="myCode">Loading...</span></p>
+
+    <input type="text" id="toCode" placeholder="Enter friend's code" />
+    <textarea id="msgInput" placeholder="Type a message..."></textarea>
+    <button id="sendBtn">Send</button>
+
+    <div id="messages"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

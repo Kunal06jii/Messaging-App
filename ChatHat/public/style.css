@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 400px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+#messages {
+  border: 1px solid #ddd;
+  padding: 10px;
+  flex: 1;
+  margin-top: 10px;
+  overflow-y: auto;
+  background: #fafafa;
+}
+
+.message {
+  padding: 8px 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  max-width: 80%;
+}
+
+.message.sent {
+  background: #d1e7dd;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.received {
+  background: #e2e3e5;
+  align-self: flex-start;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #842029;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#toCode {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#sendBtn {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 500px) {
+  #app {
+    width: 90%;
+    height: 90%;
+  }
+}
